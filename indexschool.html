@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chakturia Prathamik Vidyalaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Baloo+Da+2:wght@600;800&family=Nunito:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff;--ink:#1D2B53;--sun:#FFC83D;--sky:#2D9CDB;--leaf:#3BB273;--coral:#FF6B5E;--grape:#7B5BD6;
+--t-sky:#E4F4FF;--t-sun:#FFF3CC;--t-leaf:#E3F6EA;--t-coral:#FFE9E6;--hero:#CDEBFF;--navy:#1D2B53;--line:#DDE4F0;
+--head:"Baloo 2","Trebuchet MS",system-ui,sans-serif;--body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#12162B;--ink:#F2F4FF;--t-sky:#17304A;--t-sun:#3A3216;--t-leaf:#173A2A;--t-coral:#40201F;--hero:#18365A;--navy:#0B0F20;--line:#2B3354;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#12162B;--ink:#F2F4FF;--t-sky:#17304A;--t-sun:#3A3216;--t-leaf:#173A2A;--t-coral:#40201F;--hero:#18365A;--navy:#0B0F20;--line:#2B3354;color-scheme:dark}
+:root:lang(bn){--head:"Baloo Da 2","Noto Sans Bengali",sans-serif;--body:"Noto Sans Bengali",system-ui,sans-serif}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--paper)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0;font-weight:800}
+h2{font-size:clamp(1.9rem,5.5vw,2.8rem);margin-bottom:.9em}
+h2::after{content:"";display:block;width:4.5rem;height:8px;border-radius:8px;background:var(--acc,var(--sun));margin-top:.5rem}
+h3{font-size:1.3rem;font-weight:600}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+section{padding:clamp(3.5rem,9vw,5.5rem) 0}
+.muted{opacity:.7}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.5rem;border-radius:999px;font:800 1.05rem var(--head);text-decoration:none;border:3px solid #1D2B53;color:#1D2B53;background:#fff;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.fill{background:var(--sun)}
+.sm{padding:.2rem .8rem;font-size:.9rem}
+
+.top .wrap{display:flex;flex-direction:column;gap:.5rem;padding-top:.8rem;padding-bottom:.6rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.brand b{font:800 1.15rem var(--head)}
+.top nav{display:flex;gap:1.1rem;align-items:center;overflow-x:auto;white-space:nowrap;font-weight:700}
+.top nav a{text-decoration:none;padding:.3rem 0}
+.top nav a:hover{color:var(--coral)}
+#lang{margin-left:auto;font:700 .9rem var(--body);background:var(--coral);color:#1D2B53;border:0;border-radius:999px;padding:.3rem 1rem;cursor:pointer}
+@media(min-width:900px){.top .wrap{flex-direction:row;justify-content:space-between;align-items:center}}
+
+.hero{background:var(--hero)}
+.hero .wrap{display:grid;gap:1.5rem;align-items:center;padding-top:clamp(1.5rem,5vw,3.5rem)}
+@media(min-width:800px){.hero .wrap{grid-template-columns:1.05fr 1fr}}
+.hero h1{font-size:clamp(2.6rem,9vw,4.8rem);line-height:1.03}
+.hero h1::after{content:"";display:block;width:6rem;height:10px;border-radius:10px;background:var(--sun);margin-top:.9rem}
+.hero p{font-size:1.2rem;margin:1.1rem 0 1.5rem;max-width:36ch}
+.scene{width:100%;height:auto;display:block}
+.wave{display:block;width:100%;height:46px;margin-top:-1px}
+
+.two{display:grid;gap:2.5rem;grid-template-columns:1fr}
+@media(min-width:800px){.two{grid-template-columns:1.2fr 1fr;align-items:start}}
+.a1{background:var(--t-sun)}.a2{background:var(--t-sky)}.a3{background:var(--t-leaf)}
+#admission{--acc:var(--coral)}#about{--acc:var(--sky)}#learning{--acc:var(--leaf)}#staff{--acc:var(--grape)}#timetable{--acc:var(--sky)}#gallery{--acc:var(--coral)}#notices{--acc:var(--sun)}#visit{--acc:var(--sun)}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
+.chip{display:grid;place-items:center;min-width:3.6rem;height:3.6rem;padding:0 .8rem;border-radius:999px;font:800 1.3rem var(--head);color:#1D2B53}
+#adm{display:grid;gap:1rem;padding:1.6rem;background:var(--paper);border:3px solid var(--sun);border-radius:28px;box-shadow:0 14px 30px rgba(29,43,83,.15)}
+#adm label{display:grid;gap:.3rem;font-weight:700}
+#adm input,#adm select,#adm textarea{font:400 1rem var(--body);padding:.7rem .9rem;color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:14px}
+#adm .btn{justify-self:start}
+#admMsg{margin:0}
+
+dl{margin:0;padding:1.4rem 1.6rem;background:var(--t-sky);border:3px solid var(--sky);border-radius:24px}
+dt{font:800 1.05rem var(--head);margin-top:.7rem}dt:first-child{margin-top:0}dd{margin:0}
+#about p:first-of-type{font-size:1.25rem}
+
+.grid{display:grid;gap:1.25rem;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+.tile{padding:1.4rem;border-radius:24px;background:var(--paper);border:3px solid var(--c)}
+.tile p{margin:0}
+.ic{display:grid;place-items:center;width:3.4rem;height:3.4rem;border-radius:50%;font-size:1.7rem;margin-bottom:.7rem;background:var(--c);font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+
+.staff{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.staff div{text-align:center}
+.staff p{margin:0}
+.av{width:96px;height:96px;margin:0 auto .7rem;border-radius:50%;display:grid;place-items:center;color:#fff;background:var(--coral)}
+.staff div:nth-child(4n+2) .av{background:var(--sky)}.staff div:nth-child(4n+3) .av{background:var(--leaf)}.staff div:nth-child(4n+4) .av{background:var(--grape)}
+.staff input{display:block;width:100%;margin:.3rem 0;padding:.55rem .7rem;font:inherit;color:inherit;background:var(--paper);border:2px solid var(--line);border-radius:12px}
+
+.tabs{display:grid;gap:2rem}
+@media(min-width:800px){.tabs{grid-template-columns:1fr 1fr}}
+.tbw{background:var(--paper);border-radius:24px;border:3px solid var(--sky);overflow:hidden}
+table{width:100%;border-collapse:collapse}
+caption{font:800 1.3rem var(--head);padding:1rem 1rem .6rem;text-align:left}
+th{background:var(--sky);color:#1D2B53;text-align:left;padding:.6rem 1rem}
+td{padding:.6rem 1rem;border-top:1px solid var(--line)}
+
+.gal{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));margin-bottom:1rem}
+.gal>div{aspect-ratio:4/3;border-radius:20px;display:grid;place-items:center;font-size:2.2rem;background:var(--t-coral)}
+.gal>div:nth-child(3n+2){background:var(--t-sun)}.gal>div:nth-child(3n){background:var(--t-leaf)}
+.gal figure{margin:0;position:relative}
+.gal img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px}
+.gal .sm{position:absolute;right:.5rem;top:.5rem}
+
+.notice{display:grid;grid-template-columns:10rem 1fr;gap:1rem;padding:1rem 1.25rem;background:var(--paper);border-radius:20px;border:3px solid var(--leaf)}
+.notice p{margin:0}
+@media(max-width:560px){.notice{grid-template-columns:1fr;gap:.2rem}}
+.visit{background:var(--navy);color:#fff}
+.visit p{color:#fff}
+footer{padding:2rem 0 0;font-size:.95rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="p" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7z" fill="currentColor"/></symbol></svg>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="18" fill="#FFC83D"/><path d="M8 13c4-2 7-1 10 1 3-2 6-3 10-1v12c-4-2-7-1-10 1-3-2-6-3-10-1z" fill="#fff" stroke="#1D2B53" stroke-width="2" stroke-linejoin="round"/><path d="M18 14v12" stroke="#1D2B53" stroke-width="2"/></svg><b>Chakturia Prathamik Vidyalaya</b></a>
+  <nav aria-label="Main"><a href="#about">About</a><a href="#admission">Admission</a><a href="#learning">Learning</a><a href="#staff">Staff</a><a href="#timetable">Timetable</a><a href="#gallery">Gallery</a><a href="#notices">Notices</a><a href="#visit">Contact</a><button id="lang" type="button">বাংলা</button></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Chakturia Prathamik Vidyalaya</h1>
+    <p>A primary school in Chakturia, West Bengal, where children learn to read, write and count.</p>
+    <div class="btns"><a class="btn fill" href="#admission">Apply for admission</a><a class="btn" href="#visit">Find the school</a></div>
+  </div>
+  <svg class="scene" viewBox="0 0 480 340" role="img" aria-label="Illustration of a school with children">
+    <circle cx="410" cy="60" r="34" fill="#FFC83D"/><ellipse cx="90" cy="60" rx="46" ry="16" fill="#fff"/><ellipse cx="122" cy="48" rx="30" ry="14" fill="#fff"/><ellipse cx="320" cy="110" rx="40" ry="13" fill="#fff"/>
+    <ellipse cx="240" cy="345" rx="300" ry="70" fill="#3BB273"/>
+    <rect x="62" y="236" width="10" height="56" fill="#8B5E3C"/><circle cx="67" cy="222" r="34" fill="#2E9E63"/><rect x="408" y="240" width="10" height="52" fill="#8B5E3C"/><circle cx="413" cy="226" r="32" fill="#2E9E63"/>
+    <rect x="150" y="150" width="180" height="142" rx="6" fill="#FFE08A"/><path d="M135 152l105-60 105 60z" fill="#FF6B5E"/>
+    <rect x="224" y="196" width="32" height="96" rx="16" fill="#2D9CDB"/><rect x="168" y="178" width="34" height="34" rx="6" fill="#CDEBFF"/><rect x="278" y="178" width="34" height="34" rx="6" fill="#CDEBFF"/><circle cx="240" cy="134" r="13" fill="#fff"/>
+    <path d="M240 92V56" stroke="#1D2B53" stroke-width="4" stroke-linecap="round"/><path d="M240 56h30l-8 9 8 9h-30z" fill="#7B5BD6"/>
+    <rect x="108" y="286" width="26" height="38" rx="13" fill="#FF6B5E"/><circle cx="121" cy="276" r="14" fill="#F2B58A"/><path d="M107 274a14 14 0 0 1 28 0z" fill="#3B2A20"/>
+    <rect x="156" y="292" width="26" height="38" rx="13" fill="#7B5BD6"/><circle cx="169" cy="282" r="14" fill="#C98B5E"/><path d="M155 280a14 14 0 0 1 28 0z" fill="#3B2A20"/>
+    <rect x="300" y="292" width="26" height="38" rx="13" fill="#FFC83D"/><circle cx="313" cy="282" r="14" fill="#F2B58A"/><path d="M299 280a14 14 0 0 1 28 0z" fill="#3B2A20"/>
+    <rect x="346" y="286" width="26" height="38" rx="13" fill="#2D9CDB"/><circle cx="359" cy="276" r="14" fill="#C98B5E"/><path d="M345 274a14 14 0 0 1 28 0z" fill="#3B2A20"/>
+  </svg>
+</div>
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 35C240 70 480 0 720 30s480 40 720-5v45H0z" style="fill:var(--paper)"/></svg>
+</div>
+
+<section id="admission" class="a1"><div class="wrap two">
+  <div><h2>Admission</h2>
+  <p>Admission is open for KG and Classes 1 to 4.</p>
+  <div class="chips" aria-hidden="true"><span class="chip" style="background:var(--coral)">KG</span><span class="chip" style="background:var(--sky)">1</span><span class="chip" style="background:var(--leaf)">2</span><span class="chip" style="background:#B7A3F5">3</span><span class="chip" style="background:var(--sun)">4</span></div>
+  <p>Fill in the form and tap the button. Your email app opens with the details ready to send to the school.</p></div>
+  <form id="adm">
+    <label>Child’s name<input name="child" required></label>
+    <label>Date of birth<input name="dob" type="date" required></label>
+    <label>Class applying for<select name="cls" required><option value="">Select</option><option>KG</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option></select></label>
+    <label>Parent or guardian name<input name="parent" required></label>
+    <label>Phone number<input name="phone" type="tel" required></label>
+    <label>Address<textarea name="addr" rows="2" required></textarea></label>
+    <button class="btn fill" type="submit">Send admission request</button>
+    <p id="admMsg" role="status"></p>
+  </form>
+</div></section>
+
+<section id="about"><div class="wrap two">
+  <div><h2>About our school</h2>
+  <p>Chakturia Prathamik Vidyalaya is a primary school for the children of Chakturia and the families around it. It is where a child’s learning begins.</p>
+  <p>This website brings notices, timetables and directions together for parents and visitors.</p></div>
+  <dl><dt>Type</dt><dd>Primary school</dd><dt>Place</dt><dd>Chakturia, West Bengal</dd><dt>PIN code</dt><dd>721301</dd></dl>
+</div></section>
+
+<section id="learning" class="a3"><div class="wrap">
+  <h2>What children learn</h2>
+  <div class="grid">
+    <div class="tile" style="--c:var(--coral)"><span class="ic" aria-hidden="true">📖</span><h3>Reading and writing</h3><p>Reading with confidence and writing in their own words.</p></div>
+    <div class="tile" style="--c:var(--sun)"><span class="ic" aria-hidden="true">🔢</span><h3>Numbers</h3><p>Counting, adding and measuring with everyday things.</p></div>
+    <div class="tile" style="--c:var(--leaf)"><span class="ic" aria-hidden="true">🌿</span><h3>Our world</h3><p>Plants, animals, weather and the village around us.</p></div>
+    <div class="tile" style="--c:var(--sky)"><span class="ic" aria-hidden="true">🎨</span><h3>Play and creativity</h3><p>Games, songs and drawing, because learning should be enjoyable.</p></div>
+  </div>
+</div></section>
+
+<section id="staff"><div class="wrap">
+  <h2>Our teachers</h2>
+  <div class="staff" id="staffList"></div>
+  <div class="btns" id="staffBar" style="margin-top:1.25rem"></div>
+  <script type="application/json" id="staffData">[{"role":"Head Teacher","name":"kousik kar","bn":""},{"role":"Teacher","name":"kousik kar","bn":""},{"role":"Teacher","name":"kousik kar","bn":""}]</script>
+</div></section>
+
+<section id="timetable" class="a2"><div class="wrap">
+  <h2>Timetable and holidays</h2>
+  <div class="tabs">
+    <div class="tbw"><table><caption>Daily routine</caption>
+      <tr><th>Activity</th><th>Time</th></tr>
+      <tr><td>Prayer and assembly</td><td class="muted">To be added</td></tr>
+      <tr><td>Morning classes</td><td class="muted">To be added</td></tr>
+      <tr><td>Midday break</td><td class="muted">To be added</td></tr>
+      <tr><td>Afternoon classes</td><td class="muted">To be added</td></tr>
+      <tr><td>School closes</td><td class="muted">To be added</td></tr>
+    </table></div>
+    <div class="tbw"><table><caption>Holidays</caption>
+      <tr><th>Holiday</th><th>Date</th></tr>
+      <tr><td>Republic Day</td><td>26 January</td></tr>
+      <tr><td>Independence Day</td><td>15 August</td></tr>
+      <tr><td>Durga Puja holidays</td><td class="muted">To be announced</td></tr>
+      <tr><td>Winter holidays</td><td class="muted">To be announced</td></tr>
+      <tr><td>Summer vacation</td><td class="muted">To be announced</td></tr>
+    </table></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>Photo gallery</h2>
+  <div class="gal" id="galList"></div>
+  <p class="muted" id="galNote"></p>
+  <div class="btns" id="galBar"></div>
+  <script type="application/json" id="galData">[]</script>
+</div></section>
+
+<section id="notices" class="a1"><div class="wrap">
+  <h2>Notice board</h2>
+  <div class="notice"><b>10 November 2026</b><p>Welcome to the new school website. Notices, events and holiday dates will be posted here.</p></div>
+</div></section>
+
+<section id="visit" class="visit"><div class="wrap two">
+  <div><h2>Contact</h2>
+  <p>Chakturia Prathamik Vidyalaya</p>
+  <p>Chakturia, West Bengal 721301</p>
+  <p>Plus code: 7CV3+WWV</p>
+  <div class="btns"><a class="btn fill" href="https://maps.app.goo.gl/est3ys7iVmJ8kgf87" target="_blank" rel="noopener">Open in Google Maps</a></div></div>
+  <div><h3>Phone and email</h3><p>Contact details will be added soon. Please visit the school or ask the Head Teacher.</p></div>
+</div>
+<div class="wrap"><footer><span>© 2026</span> <span>Chakturia Prathamik Vidyalaya</span></footer></div></section>
+
+<script>
+var bn={
+"Chakturia Prathamik Vidyalaya":"চাকতুরিয়া প্রাথমিক বিদ্যালয়",
+"About":"আমাদের কথা","Learning":"শিক্ষা","Staff":"শিক্ষকগণ","Timetable":"সময়সূচি","Gallery":"ছবি","Notices":"বিজ্ঞপ্তি","Contact":"যোগাযোগ",
+"A primary school in Chakturia, West Bengal, where children learn to read, write and count.":"পশ্চিমবঙ্গের চাকতুরিয়ার একটি প্রাথমিক বিদ্যালয়, যেখানে শিশুরা পড়তে, লিখতে ও গুনতে শেখে।",
+"Find the school":"স্কুলের ঠিকানা","Read the notices":"বিজ্ঞপ্তি দেখুন",
+"About our school":"আমাদের বিদ্যালয়",
+"Chakturia Prathamik Vidyalaya is a primary school for the children of Chakturia and the families around it. It is where a child’s learning begins.":"চাকতুরিয়া প্রাথমিক বিদ্যালয় চাকতুরিয়া ও আশপাশের পরিবারের শিশুদের জন্য। এখানেই শিশুর শিক্ষার শুরু।",
+"This website brings notices, timetables and directions together for parents and visitors.":"অভিভাবক ও দর্শনার্থীদের জন্য বিজ্ঞপ্তি, সময়সূচি ও ঠিকানা এই ওয়েবসাইটে পাওয়া যাবে।",
+"Type":"ধরন","Primary school":"প্রাথমিক বিদ্যালয়","Place":"স্থান","Chakturia, West Bengal":"চাকতুরিয়া, পশ্চিমবঙ্গ","PIN code":"পিন কোড","721301":"৭২১৩০১",
+"What children learn":"শিশুরা কী শেখে",
+"Reading and writing":"পড়া ও লেখা","Reading with confidence and writing in their own words.":"আত্মবিশ্বাসের সঙ্গে পড়া এবং নিজের ভাষায় লেখা।",
+"Numbers":"সংখ্যা","Counting, adding and measuring with everyday things.":"প্রতিদিনের জিনিস দিয়ে গোনা, যোগ করা ও মাপা।",
+"Our world":"আমাদের পরিবেশ","Plants, animals, weather and the village around us.":"গাছপালা, প্রাণী, আবহাওয়া ও আমাদের গ্রাম।",
+"Play and creativity":"খেলা ও সৃজনশীলতা","Games, songs and drawing, because learning should be enjoyable.":"খেলা, গান ও ছবি আঁকা, কারণ শেখা হওয়া উচিত আনন্দের।",
+"Our teachers":"আমাদের শিক্ষকগণ","Head Teacher":"প্রধান শিক্ষক","Teacher":"শিক্ষক","Name to be added":"নাম শীঘ্রই যোগ করা হবে",
+"Timetable and holidays":"সময়সূচি ও ছুটি","Daily routine":"প্রতিদিনের রুটিন","Activity":"কার্যক্রম","Time":"সময়",
+"Prayer and assembly":"প্রার্থনা সভা","Morning classes":"সকালের ক্লাস","Midday break":"মধ্যাহ্ন বিরতি","Afternoon classes":"দুপুরের ক্লাস","School closes":"ছুটি","To be added":"শীঘ্রই জানানো হবে",
+"Holidays":"ছুটির তালিকা","Holiday":"ছুটি","Date":"তারিখ","Republic Day":"প্রজাতন্ত্র দিবস","26 January":"২৬ জানুয়ারি","Independence Day":"স্বাধীনতা দিবস","15 August":"১৫ আগস্ট",
+"Durga Puja holidays":"দুর্গাপুজোর ছুটি","Winter holidays":"শীতের ছুটি","Summer vacation":"গ্রীষ্মের ছুটি","To be announced":"তারিখ পরে জানানো হবে",
+"Photo gallery":"ছবির গ্যালারি","Photos of classrooms and school events will be added here.":"শ্রেণিকক্ষ ও স্কুলের অনুষ্ঠানের ছবি এখানে যোগ করা হবে।",
+"Notice board":"বিজ্ঞপ্তি","10 November 2026":"১০ নভেম্বর ২০২৬","Welcome to the new school website. Notices, events and holiday dates will be posted here.":"নতুন ওয়েবসাইটে স্বাগতম। বিজ্ঞপ্তি, অনুষ্ঠান ও ছুটির তারিখ এখানে দেওয়া হবে।",
+"Chakturia, West Bengal 721301":"চাকতুরিয়া, পশ্চিমবঙ্গ ৭২১৩০১","Plus code: 7CV3+WWV":"প্লাস কোড: 7CV3+WWV","Open in Google Maps":"গুগল ম্যাপে দেখুন",
+"Phone and email":"ফোন ও ইমেল","Contact details will be added soon. Please visit the school or ask the Head Teacher.":"যোগাযোগের তথ্য শীঘ্রই যোগ করা হবে। অনুগ্রহ করে স্কুলে আসুন বা প্রধান শিক্ষককে জিজ্ঞাসা করুন।",
+"© 2026":"© ২০২৬",
+"Admission":"ভর্তি","Apply for admission":"ভর্তির আবেদন","Admission is open for KG and Classes 1 to 4.":"কেজি এবং প্রথম থেকে চতুর্থ শ্রেণিতে ভর্তি চলছে।",
+"Fill in the form and tap the button. Your email app opens with the details ready to send to the school.":"ফর্মটি পূরণ করে বোতামে চাপ দিন। আপনার ইমেল অ্যাপ খুলবে, তথ্যসহ বিদ্যালয়ে পাঠানোর জন্য প্রস্তুত থাকবে।",
+"Child’s name":"শিশুর নাম","Date of birth":"জন্ম তারিখ","Class applying for":"যে শ্রেণিতে ভর্তি","Parent or guardian name":"অভিভাবকের নাম","Phone number":"ফোন নম্বর","Address":"ঠিকানা","Send admission request":"আবেদন পাঠান","Select":"নির্বাচন করুন"};
+bn["Assistant Teacher"]="সহকারী শিক্ষক";
+var nodes=[],w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),btn=document.getElementById("lang");
+while(w.nextNode()){var n=w.currentNode,k=n.nodeValue.trim();if(bn[k])nodes.push([n,n.nodeValue,k]);}
+function setLang(l){document.documentElement.lang=l;nodes.forEach(function(a){a[0].nodeValue=l==="bn"?a[1].replace(a[2],bn[a[2]]):a[1]});btn.textContent=l==="bn"?"English":"বাংলা";try{localStorage.setItem("lang",l)}catch(e){}}
+btn.addEventListener("click",function(){setLang(document.documentElement.lang==="bn"?"en":"bn")});
+try{if(localStorage.getItem("lang")==="bn")setLang("bn")}catch(e){}
+
+var staff=[],gal=[],editing=false,canEdit=false,box=document.getElementById("staffList"),bar=document.getElementById("staffBar"),gl=document.getElementById("galList"),gb=document.getElementById("galBar"),gn=document.getElementById("galNote");
+try{staff=JSON.parse(document.getElementById("staffData").textContent)}catch(e){}
+try{gal=JSON.parse(document.getElementById("galData").textContent)}catch(e){}
+var _s=setLang;setLang=function(l){_s(l);renderStaff();renderGal()};
+function isBn(){return document.documentElement.lang==="bn"}
+function T(s){return isBn()&&bn[s]?bn[s]:s}
+function mk(t,x,c){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function inp(p,k,ph){var i=mk("input");i.type="text";i.value=p[k]||"";i.placeholder=ph;i.setAttribute("aria-label",ph);i.oninput=function(){p[k]=i.value};return i}
+function renderStaff(){
+  box.innerHTML="";
+  staff.forEach(function(p,i){
+    var d=mk("div");
+    d.innerHTML='<span class="av"><svg width="46" height="46"><use href="#p"/></svg></span>';
+    if(editing){
+      d.appendChild(inp(p,"role","Role, for example Teacher"));
+      d.appendChild(inp(p,"name","Name"));
+      d.appendChild(inp(p,"bn","Name in Bengali (optional)"));
+      var r=mk("button","Remove","btn sm");r.type="button";r.onclick=function(){staff.splice(i,1);renderStaff()};d.appendChild(r);
+    }else{
+      var nm=(isBn()&&p.bn)||p.name;
+      d.appendChild(mk("h3",T(p.role||"Teacher")));
+      d.appendChild(mk("p",nm||T("Name to be added"),nm?"":"muted"));
+    }
+    box.appendChild(d);
+  });
+  drawBar();
+}
+function drawBar(msg){
+  bar.innerHTML="";if(!canEdit)return;
+  function b(t,c,f){var x=mk("button",t,"btn "+c);x.type="button";x.onclick=f;bar.appendChild(x)}
+  if(!editing){b("Edit names","",function(){editing=true;renderStaff()})}
+  else{b("Add teacher","",function(){staff.push({role:"Teacher",name:"",bn:""});renderStaff()});b("Save","fill",save);b("Cancel","",function(){location.reload()})}
+  if(msg)bar.appendChild(mk("span",msg,"muted"));
+}
+function renderGal(msg){
+  gl.innerHTML="";gn.textContent="";
+  if(!gal.length){for(var k=0;k<6;k++)gl.appendChild(mk("div","📷"));gn.textContent=T("Photos of classrooms and school events will be added here.")}
+  gal.forEach(function(p,i){
+    var f=mk("figure"),im=mk("img");im.src=p.url;im.alt="School photo";im.loading="lazy";f.appendChild(im);
+    if(canEdit){var x=mk("button","Remove","btn sm");x.type="button";x.onclick=function(){gal.splice(i,1);persist().catch(function(){renderGal("Could not save. Please try again.")})};f.appendChild(x)}
+    gl.appendChild(f);
+  });
+  gb.innerHTML="";
+  if(canEdit){
+    var f=mk("input");f.type="file";f.accept="image/*";f.multiple=true;f.hidden=true;
+    f.onchange=addPhotos;gb.appendChild(f);
+    var a=mk("button","Add photos","btn fill");a.type="button";a.onclick=function(){f.click()};gb.appendChild(a);
+    if(msg)gb.appendChild(mk("span",msg,"muted"));
+  }
+}
+async function addPhotos(e){
+  var files=Array.prototype.slice.call(e.target.files);if(!files.length)return;
+  try{
+    var as=await claude.use("assets");
+    if(!as){renderGal("Photo upload is not available.");return}
+    for(var i=0;i<files.length;i++){var r=await as.upload(files[i]);gal.push({url:r.url})}
+    await persist();
+  }catch(err){renderGal("Could not upload. Please try again.")}
+}
+async function persist(){
+  var a=await claude.use("artifact");if(!a)throw new Error("unavailable");
+  editing=false;setLang("en");
+  var c=document.documentElement.cloneNode(true);
+  c.removeAttribute("data-theme");c.removeAttribute("style");
+  ["#staffList","#staffBar","#galList","#galBar","#galNote"].forEach(function(s){c.querySelector(s).innerHTML=""});
+  c.querySelector("#staffData").textContent=JSON.stringify(staff).replace(/</g,"\\u003c");
+  c.querySelector("#galData").textContent=JSON.stringify(gal).replace(/</g,"\\u003c");
+  await a.publish("<!DOCTYPE html>\n"+c.outerHTML);
+}
+async function save(){
+  staff=staff.filter(function(p){return p.name||p.bn||p.role}).map(function(p){return{role:(p.role||"Teacher").trim(),name:(p.name||"").trim(),bn:(p.bn||"").trim()}});
+  try{await persist()}catch(e){drawBar("Could not save. Please try again.")}
+}
+if(window.claude&&claude.use)claude.use("user").then(function(u){if(u&&u.canEdit&&u.canEdit()){canEdit=true;drawBar();renderGal()}}).catch(function(){});
+renderStaff();renderGal();
+
+document.getElementById("adm").addEventListener("submit",function(e){
+  e.preventDefault();var f=e.target,v=function(n){return f.elements[n].value.trim()};
+  var body="Admission request\n\nChild’s name: "+v("child")+"\nDate of birth: "+v("dob")+"\nClass: "+v("cls")+"\nParent or guardian: "+v("parent")+"\nPhone: "+v("phone")+"\nAddress: "+v("addr");
+  var a=document.createElement("a");a.href="mailto:kousikkar636@gmail.com?subject="+encodeURIComponent("Admission request: "+v("child")+", "+v("cls"))+"&body="+encodeURIComponent(body);a.target="_blank";a.rel="noopener";document.body.appendChild(a);a.click();a.remove();
+  document.getElementById("admMsg").textContent="If your email app did not open, please send these details to kousikkar636@gmail.com.";
+});
+</script>
+</body>
+</html>
